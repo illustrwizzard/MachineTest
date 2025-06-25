@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.cart.CartFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Subtotal -->
+    <TextView
+        android:paddingStart="16dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/tvSubtotal"
+        android:text="Subtotal: ₹0.00"
+        android:textColor="#4CAF50"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Tax -->
+    <TextView
+        android:paddingStart="16dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/tvTax"
+        android:text="Tax: ₹0.00"
+        android:textColor="#4CAF50"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Total -->
+    <TextView
+        android:paddingStart="16dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/tvTotal"
+        android:text="Total: ₹0.00"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FFA500"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Clear Cart Button -->
+        <Button
+            android:id="@+id/btnClearCart"
+            android:text="Clear Cart"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FFA500"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
